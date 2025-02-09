@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 // Serve static files like the HTML page
 app.use(express.static(path.join(__dirname, 'public')));
-app.get("/submit", (req,res)=>{
+app.get("/", (req,res)=>{
     res.render("login.ejs")
 })
 // Handle form submission
