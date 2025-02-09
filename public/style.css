@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+    animation: backgroundAnimation 5s infinite alternate;
+}
+
+/* Form Container */
+.form-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    
+}
+
+/* Label Styling */
+label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input and Select Styling */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.element {
+    animation: fadeIn 2s ease-in-out !important;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #f9f1ef;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #bf4e57;
+    border: none;
+    border-radius: 5px;
+    color: #f1ecec;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #feb47b;
+}
+
+/* Result Section */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #0e0202;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    }
+    50% {
+        background: linear-gradient(135deg, #da2f90, #dfe831);
+    }
+    100% {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    }
+}
+
